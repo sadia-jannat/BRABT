@@ -1,0 +1,46 @@
+/*symptom style*/
+
+.list-group {
+    background-image: linear-gradient(to right top, #858e7e, #9b9888, #aea297, #beada9, #c9babc);
+}
+
+#symid {
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -7px 2px 15px 12px rgba(0, 0, 0, 0.59);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -7px 2px 15px 12px rgba(0, 0, 0, 0.59);
+}
+
+
+/*treatment style*/
+
+.scrollspy-example {
+    height: 500px;
+    overflow-y: scroll;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+
+/*food page*/
+
+
+/*checkbody page style*/
+
+.math {
+    background: url('../image/math.jpg');
+    width: 100%;
+}
+
+
+/*sharestory page style*/
+
+#backcolor {
+    background-image: linear-gradient(to right top, #c8d3e3, #a6bdc5, #8da5a2, #7c8c80, #707263);
+}
+
+
+/*showstory page style*/
+
+#shadoow {
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 23px -14px 10px -5px rgba(0, 0, 0, 0.43);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 23px -14px 10px -5px rgba(0, 0, 0, 0.43);
+}

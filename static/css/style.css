@@ -1,0 +1,86 @@
+/*user_signup and user_login page ar style bellow*/
+
+.user_card {
+    width: 500px;
+    height: auto;
+    margin-top: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-image: linear-gradient(to right top, #2359aa, #9b52a8, #df5085, #f96f54, #e8a326);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.user_card:hover {
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(51, 31, 4, 0.99);
+    box-shadow: 5px 5px 20px 5px rgba(51, 31, 4, 0.99);
+}
+
+.form_container {
+    margin-top: 20px;
+    width: 500px;
+}
+
+#form-title {
+    color: #fff;
+}
+
+.login_btn {
+    width: 80%;
+    background: #33ccff !important;
+    color: white !important;
+}
+
+.login_btn:hover {
+    width: 80%;
+    background-color: #92a8d1 !important;
+}
+
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.login_container {
+    padding: 0 2rem;
+}
+
+.input-group {
+    width: 400px;
+}
+
+.input-group-text {
+    background: #f7ba5b !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+
+/*.bg and .container-fluid>.row asob doctorfillup page ar*/
+
+.bg {
+    background: url('../image/backimg.jpg');
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+}
+
+.container-fluid>.row {
+    margin-top: 300px;
+}
+
+.content {
+    background-image: linear-gradient(to right top, #858e7e, #9b9888, #aea297, #beada9, #c9babc);
+}
