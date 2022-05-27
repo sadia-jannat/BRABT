@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block title %}
+Show Details Story page 
+{% endblock title%}
+
+{% block storydetails %}
+
+<div class="content mt-5 mb-5">
+<div class="container mt-5 mb-5">
+<div class="row" id="shadoow">
+    
+<div class="col-md-4 ">
+<h2>Image</h2>
+<img src="{{ showall.patient_img.url }}"  alt="Category image" class="rounded" width="100%" height="200px"> 
+</div>
+
+<div class="col-md-8 ">
+  <h2>History</h2>
+    <table class="table table-hover">
+    
+        <tbody>
+          <tr>
+            <td>Name:</td>
+            <td>{{showall.lastname}}</td>            
+          </tr>
+
+          <tr>
+            <td>Address:</td>
+            <td>{{showall.address}}</td>
+          </tr>
+
+          <tr>
+            <td>Story Title:</td>
+            <td>{{showall.storytitle}}</td>           
+          </tr>
+
+          <tr>
+            <td>About Story:</td>
+            <td>{{showall.story}}</td>            
+          </tr>
+
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+</div>
+
+{% endblock storydetails %}

@@ -1,0 +1,180 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block title %}
+Doctors Opinion About Brain Tumor
+{% endblock title%}
+
+{% block opinion%}
+
+<h2 class="font-weight-bold text-center ">
+    <i class="fa-solid fa-d fa-2x text-danger">octors</i>
+    <i class="fa-solid fa-o fa-2x text-success">pinion</i>
+</h2>
+
+<!--start auto search-->
+<section>
+  <div class="container">
+  <!--header-body-->
+    <div class="header-body">
+            
+      <div class="header-contain">
+            <h3 class="font-weight-bold">
+              <i class="fa-solid fa-s fa-1x mr-3 " style="color:#123569;">earch</i>
+              <i class="fa-solid fa-d fa-1x mr-3" style="color:#B5102E;">isease</i>
+              <i class="fa-solid fa-n fa-1x " style="color:#9FB314;">ame</i>
+            </h3>
+
+     <!--form for auto search-->
+      <form action="/showdoctoropinion/" method="post">
+        {% csrf_token %}
+
+      <div class="row">
+      <div class="col">
+
+      <input id="query" name="query" type="text" class="form-control" placeholder="Enter Disease Name">
+        
+      </div>
+      </div>
+
+      <button type="submit" class="btn btn-danger btn-lg mt-3">
+        <i class="fa fa-search"></i>
+        Search</button>
+
+     </form>
+  <!--end form-->
+     </div>
+    </div>
+  </div>
+</section>  
+<!--end auto search-->
+
+<!--Pituitary Adenoma disease show-->
+<div class="container bg-light my-4 py-4" >
+
+  <div class="row">
+
+<h2><i class="fas fa-search fa-1x" style="color:#921129;"></i>
+Pituitary Adenoma Disease</h2>
+    <table class="table table-bordered table-striped ">
+      <tbody>
+
+    {% if disease_list %}
+
+    {% for dis in disease_list %}
+    
+    {% if dis.disease_name == 'Pituitary Adenoma' %}
+
+<tr>
+  <td scope="row">{{dis.name}}</td>
+  <td>{{dis.disease_name}}</td>
+  <td>{{dis.details}}</td>
+ 
+</tr>
+
+{%endif%}
+
+{% endfor %}
+
+{%else%}
+<p>Search First</p>
+{% endif %}
+
+</tbody>
+</table>
+
+</div>
+</div>
+<!--end Pituitary Adenoma disease show-->
+
+<!--Meningioma disease show-->
+<div class="container bg-light my-4 py-4" >
+
+  <div class="row">
+
+    <h2><i class="fas fa-search fa-1x" style="color:#921129;"></i> 
+      Meningioma Disease</h2>
+
+    <table class="table table-bordered table-striped ">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Doctor Name</th>
+          <th scope="col">Disease Name</th>
+          <th scope="col">Details</th>
+        </tr>
+      </thead>
+      <tbody>
+
+    {% if disease_list %}
+
+    {% for dis in disease_list %}
+    
+    {% if dis.disease_name == 'Meningioma' %}
+
+<tr>
+  <td scope="row">{{dis.name}}</td>
+  <td>{{dis.disease_name}}</td>
+  <td>{{dis.details}}</td>
+ 
+</tr>
+
+{%endif%}
+
+{% endfor %}
+
+{%else%}
+<p>Search First</p>
+{% endif %}
+
+</tbody>
+</table>
+
+</div>
+</div>
+<!--end Pituitary Adenoma disease show-->
+
+
+
+<!--all disease show-->
+<div class="container bg-light my-4 py-4" >
+
+    <div class="row">
+
+      <h2 class="text-center" style="color:#921129;">
+        All Diseases</h2>
+
+{% if show %}
+<table class="table table-bordered table-striped ">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Doctor Name</th>
+        <th scope="col">Disease Name</th>
+        <th scope="col">Disease Opinion from doctor</th>
+      </tr>
+    </thead>
+
+<tbody>
+
+{% for s in show%}
+
+<tr>
+    <td scope="row">{{s.name}}</td>
+    <td>{{s.disease_name}}</td>
+    <td>{{s.details}}</td>
+   
+</tr>
+
+{% endfor%}
+
+</tbody>
+</table>
+
+{% endif %}
+
+</div>
+</div>
+<!--end all disease show-->
+<!--can not create for all type disease..it is my next word for auto search ar jonno-->
+
+{% endblock opinion%}

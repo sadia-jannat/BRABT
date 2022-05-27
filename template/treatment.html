@@ -1,0 +1,240 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block title %}
+Treatments and Side Effects
+{% endblock title%}
+
+{% block treatment%}
+
+<!--loading style code bootstrap-->
+<div class="spinner-border text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-secondary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-success" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-danger" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-info" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-light" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-dark" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<!--end loading code-->
+<!--Growing spinner-->
+<div class="spinner-grow text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-light" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<!--endGrowing spinner-->
+
+<!--section 1-->
+
+<h1 class="font-weight-bold text-center ">
+  <i class="fa-solid fa-t fa-2x  " style="color:#63110a;"></i>reatments and Side Effects</h1>
+
+ <div class="content p-5 mx-2 ">
+      <div class="row ml-4 mr-4">
+
+        <p class="lead text-justify text-black">Treatment plan will depend on a wide range of factors, from the tumor’s type, size, and location to your age and overall health. Your treatment options may also change over time.
+          <br><br>In this section, you’ll find details about treatment options and common side effects of treatments. 
+          Treatment options and recommendations depend on several factors:
+        </p>
+
+        <ul class="lead text-justify" style="color:#63110a;">
+          <li >The size, type, and grade of the tumor</li>
+          <li >Whether the tumor is putting pressure on vital parts of the brain</li>
+          <li >If the tumor has spread to other parts of the CNS or body</li>
+          <li >Possible side effects</li>
+          <li >The patient’s preferences and overall health</li>
+          </ul>
+
+          <p class="lead text-justify text-black">Some types of brain tumors grow rapidly; other tumors grow slowly. Considering all these factors, your doctor will talk with you about how soon treatment should start after diagnosis.
+          </p>
+
+      </div>
+    </div>
+<!--end section 1-->
+
+<!--start section 2-->
+<div class="bg-light">
+    <div class="container bg-light my-4 py-4" >
+        <div class="row shadow-lg">
+
+          <!--head text-->
+          <h1 class="font-weight-bold text-center ">
+          <i class="fa-solid fa-t fa-2x text-danger"></i>
+    <i class="fa-solid fa-r text-success"></i>
+    <i class="fa-solid fa-e text-primary"></i>
+    <i class="fa-solid fa-t text-success"></i>
+    <i class="fa-solid fa-m text-primary"></i>
+    <i class="fa-solid fa-e text-danger"></i>
+    <i class="fa-solid fa-n text-primary"></i>
+    <i class="fa-solid fa-t text-success"></i>
+          </h1>
+          <!--end head text-->
+
+          <div class="col-3 shadow-lg">
+          <!--scrollspy start-->
+          <div id="list-example" class="list-group">
+            <a class="text-center" href="#">
+              <img src="{% static 'image/headicon.png' %}" style="height: 100px" class="img-fluid rounded-circle">
+            </a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-1" style="color:#63110a;">Steroids</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-2" style="color:#63110a;">Surgery</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-3" style="color:#63110a;">Chemotherapy</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-4" style="color:#63110a;">Radiation Therapy</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-5" style="color:#63110a;">Stereotactic Radiosurgery</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-6" style="color:#63110a;">Proton Therapy</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-7" style="color:#63110a;">Tumor Treating Fields (TTFields)</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-8" style="color:#63110a;">Integrative and Alternative Medicine</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-9" style="color:#63110a;">Clinical Trials</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-11" style="color:#63110a;">Laser Interstitial Thermal Therapy (LITT)</a>
+            <a class="h4 list-group-item list-group-item-action" href="#list-item-12" style="color:#63110a;">Emerging Treatments</a>
+          </div>
+        </div>
+
+        <div class="col shadow-lg">
+          <div data-bs-spy="scroll"  data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example">
+      
+            <section class="ml-4 mr-4">
+
+            <h3 id="list-item-1" style="color:#63110a;">
+              Steroids
+            </h3>
+            <p>
+              The steroids given to brain tumor patients are corticosteroids, hormones produced by the adrenal glands. They are not the same as anabolic steroids used by athletes to build muscle.
+            </p><hr>
+        
+            <h3 id="list-item-2" style="color:#63110a;">
+              Surgery
+            </h3>
+            <p >Surgery is usually the first step in treating most brain tumors. It’s often the preferred treatment when a tumor can be removed with minimal, if any, risk of neurological damage.</p>
+            <hr>
+            <h3 id="list-item-3" style="color:#63110a;">
+              Chemotherapy Therapy
+            </h3>
+            <p >Chemotherapy is drug therapy for cancer. It works by killing the cancer cells, stopping them from spreading, or slowing their growth. Chemotherapy is typically used to treat malignant or higher grade tumors, but it may also be used to treat lower grade and non-malignant tumors.
+
+              Common chemotherapy drugs used to treat brain tumors include temozolomide, carboplatin, carmustine, vincristine, lomustine (CCNU), procarbazine and cisplatin.
+            </p>
+            <hr>
+            <h3 id="list-item-4" style="color:#63110a;">
+              Radiation Therapy
+            </h3>
+            <p >Radiation (also called X-rays, gamma rays, or photons) is a treatment used to either kill tumor cells directly or interfere with their ability to grow. The term “radiation” usually refers to conventional external beam radiation therapy, which is the most common form of radiation treatment for brain tumors. Other forms of radiation therapy are also available. 
+            </p>
+            <hr>
+            <h3 id="list-item-5" style="color:#63110a;">
+              Stereotactic Radiosurgery
+            </h3>
+            <p >
+              Stereotactic radiosurgery (SRS) is not surgery. It is a special form of radiation therapy that delivers multiple high dose radiation beams to treat the tumor. The multiple beams precisely conform to the tumor’s shape, which helps minimize the negative impact to surrounding healthy tissue and organs. SRS uses higher doses of radiation than conventional forms of radiation.
+            </p>
+            <hr>
+            <h3 id="list-item-6" style="color:#63110a;">
+              Proton Therapy
+            </h3>
+            <p >Proton therapy is a highly specialized form of radiation therapy hat uses beams of fast-moving protons to destroy the tumor. In contrast, traditional radiation therapy uses beams of highly-charged electrons.</p>
+            <hr>
+            <h3 id="list-item-7" style="color:#63110a;">
+              Tumor Treating Fields (TTFields)
+            </h3>
+            <p >Tumor Treating Fields (TTFields) use electrical fields, delivered through a wearable device, to slow and reverse tumor growth.
+            </p>
+            <hr>
+            <h3 id="list-item-8" style="color:#63110a;">
+              Integrative and Alternative Medicine
+            </h3>
+            <p >
+              Many cancer patients use integrative and alternative medicine to treat a brain tumor, address tumor-related symptoms, or to manage the side-effects caused by treatment. Integrative and alternative medicine refers to treatment and healing practices that are not standard treatments. They may be used on their own or in conjunction with standard of care treatments for brain tumors. Examples of these treatments include meditation, traditional Chinese medicine, dietary supplements, massage, certain diets (e.g., Ketogenic), and acupuncture.
+            </p>
+            <hr>
+            <h3 id="list-item-9" style="color:#63110a;">
+              Clinical Trials
+            </h3>
+            <p >
+              A clinical trial is a research study conducted within a medical setting. It is an organized way of evaluating a new investigational treatment, such as a drug or device, to determine if it is safe and effective. Information derived from clinical trials add to our overall understanding of brain tumors and helps to identify new treatment options. Clinical trial participants are patients who volunteer for this opportunity to obtain a treatment that otherwise wouldn’t be available. Although researchers truly do not know whether the new treatment or the current treatment is most effective, the new treatment being investigated must demonstrate some potential for success before a clinical trial is allowed to begin. That potential is based on previous laboratory experience, animal trials or the results of other clinical trials. No one knows in advance if the new treatment being tested in a clinical trial is as effective as, or better than, the standard therapy currently in use. The results of clinical trials are measured against the best standard therapy available for the particular condition.
+            </p>
+            <hr>
+            <h3 id="list-item-11" style="color:#63110a;">
+              Laser Interstitial Thermal Therapy (LITT)
+            </h3>
+            <p >
+              Laser Interstitial Thermal Therapy (LITT), also known as laser ablation, is a minimally invasive treatment for brain tumors. It uses a laser to destroy tumor tissue with heat. It is best used as a treatment for small (3 cm or less) tumors that are located deep in the brain.
+            </p>
+            <hr>
+            <h3 id="list-item-12" style="color:#63110a;">
+              Emerging Treatments
+            </h3>
+            <p >
+              There are several treatments that are being investigated for their use in treating brain tumors, or have been approved for treating specific brain tumors. Some of these include the following
+            </p>
+            <hr>
+          </section>
+            
+           </div>
+          <!--end scrollspy-->
+        </div>
+    
+</div>
+</div>
+</div>
+<!--end section 2-->
+
+<!--start section 3. baki-->
+<div class="bg-light">
+  <div class="container bg-light my-4 py-4" >
+      <div class="row shadow-lg">
+
+        <!--head text-->
+        <h1 class="font-weight-bold text-center ">
+        <i class="fa-solid fa-s fa-2x text-danger"></i>
+  <i class="fa-solid fa-i text-success"></i>
+  <i class="fa-solid fa-d text-primary"></i>
+  <i class="fa-solid fa-e text-success mr-3"></i>
+  <i class="fa-solid fa-e fa-2x text-primary"></i>
+  <i class="fa-solid fa-f text-danger"></i>
+  <i class="fa-solid fa-f text-primary"></i>
+  <i class="fa-solid fa-i text-success"></i>
+  <i class="fa-solid fa-c text-primary"></i>
+  <i class="fa-solid fa-t text-success"></i>
+        </h1>
+<!--section 3-->
+
+
+
+{% endblock treatment%}
