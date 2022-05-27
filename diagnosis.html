@@ -1,0 +1,473 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block title %}
+Diagnosis of Brain Tumor
+{% endblock title%}
+
+{% block diagnosis%}
+
+<!--section1-->
+<section class="content p-6">
+<div class="row ">
+    <div class="col-3 py-2 border shadow-lg p-3 mb-5 bg-white rounded">
+
+        <h3 class="p-2 text-center " style="color:#63110a;">Brain Scans (Neuro-Imaging Studies)</h3>
+        <ul class="list-group-flush">
+            <li class="list-group-item">
+                <a href="#scan1">Computed Tomography (CT)</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#scan2">Magnetic resonance imaging (MRI)</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#scan3">Functional MRI (fMRI)*</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#scan4">Flow-Sensitive MRI (FS MRI)*</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#scan5">Perfusion MRI *</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#scan6">CT Angiography (CTA) and Magnetic Resonance Angiography (MRA)*</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#scan7">Magnetic Resonance Spectroscopy (MRS)*</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#scan8">Positron Emission Tomography (PET, FDG-PET)</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#scan9">Single Photon Emission Computerized Tomography (SPECT):</a>
+            </li>
+          </ul>
+
+    </div>
+    <div class="col mr-2 ml-2 pl-2 pr-2 border shadow-lg p-3 mb-5 bg-white rounded">
+
+        <h2 class="font-weight-bold text-center" style="color:#63110a;">Over View</h2>
+
+<p class="lead text-justify">If your doctor is concerned that a brain tumor is causing your symptoms, a variety of tests may be conducted to aid in the diagnosis of a brain
+     tumor and find out more about its size, location, and type. <br><br>
+
+    Neurological exams and brain scans are used to detect the presence, location, and size of a tumor. Biopsies, molecular tests, and certain scans 
+    help determine the tumor type and provide other information, which may help determine treatment options.<br><br>
+    
+    As you go through your brain tumor journey, your doctor may repeat some of these scans and tests to find out if the tumor has changed and if 
+    it 
+    is responding to treatment.<br><br>
+    
+    Understanding these tests – how they work, why they are done, and what they show – can help you be an informed member of your care team. 
+    If you
+     have any questions about the tests your doctor is ordering, ask your doctor, nurse, patient navigator, or other health care professional.</p>
+    </div>
+
+</div>
+</section>
+<!--end section1-->
+
+<!--section2-->
+<section class= "container shadow-lg p-3 mb-5 bg-white rounded">
+    <h2 class="font-weight-bold text-center" style="color:#63110a;">How a brain tumor is diagnosed</h2>  
+
+    <p class="lead text-justify">A brain tumor diagnosed by two way:<br>
+        1.One reason dependent on nervous system work<br>
+        2.Another reason dependent on which area of the body grow tumor<br>
+    </p>
+
+    <div class="row"><!--row 1-->
+        <div class="col-8  border shadow-lg p-3 mb-5 bg-white rounded">
+            <h3 class="font-weight-bold text-center" style="color:#63110a;">Neurological Exams</h3>
+            <p class="lead text-justify">A neurological exam is usually the first step toward figuring out what is causing your symptoms. The goal is to see how well your nervous system is working. Because your brain does so many different things, a neurological exam can have many different components. Your doctor may repeat the neurological exam several times throughout your brain tumor journey to see whether your symptoms and functioning are changing.<br><br>
+
+                During a basic neurological exam, your doctor evaluates how well your nerves, balance, reflexes, strength, and senses are working. Your doctor will also assess your cognitive functioning and mental or emotional state.<br><br>
+            
+                Here are some common parts of a neurological test:<br><br>
+
+<strong style="color:#63110a;">Mental Status:</strong> tests the awareness of person, place, time, and situation<br><br>
+
+<strong style="color:#63110a;">Motor Function:</strong> tests the muscle power in various muscle groups to assess for any weakness<br><br>
+
+<strong style="color:#63110a;">Sensory Exam:</strong> checks the ability to feel and if there is a difference between sides<br><br>
+
+<strong style="color:#63110a;">Reflexes:</strong> uses a reflex hammer to gently tap different points on the body for movement<br><br>
+
+<strong style="color:#63110a;">Cranial Nerves:</strong> the brain has 12 cranial nerves, each with its own purpose. These are checked to see if a specific nerve has been affected. There may be tests for smell, vision, facial sensation, hearing, swallowing, taste, shrugging shoulders, and tongue movement.<br><br>
+
+<strong style="color:#63110a;">Balance and Coordination:</strong> checks if you are able to stand with your eyes closed, walk in a straight line, or touch your nose with your eyes closed<br>
+            </p>  
+
+
+        </div>
+        <div class="col">
+
+            <img style="height: 300px" src="{% static 'image/example.jpg' %}" class="w-90% shadow-lg p-3 mb-5 bg-dark rounded"
+                 class="card-img text-center"
+                 alt="brain tumor">
+        </div>
+    </div>
+
+    <div class="row"><!--row 2-->
+        <div class="col-3">
+
+            <img style="height: 300px" src="{% static 'image/example2.jpg' %}" class="w-60% shadow-lg p-3 mb-5 bg-dark rounded"
+                 class="card-img text-center"
+                 alt="brain tumor">
+        </div>
+        
+            
+        <div class="col  border shadow-lg p-3 mb-5 bg-white rounded">
+                <h3 class="font-weight-bold text-center" style="color:#63110a;">Area of the body grow tumor</h3>  
+                <p class="lead text-justify">Imaging tests can help doctors find out if the tumor is a primary brain tumor or if it is cancer that has spread to the brain from elsewhere in the body. Imaging tests show pictures of the inside of the body. Your doctor may consider these factors when choosing a diagnostic test:
+      
+                    <ul class="lead text-justify" style="color:#63110a;">
+                        <li>The type of tumor suspected</li>
+                        
+                        <li>Your signs and symptoms</li>
+                        
+                        <li>The results of earlier medical tests</li>
+                        
+                        <li>Your age and general health</li>
+                        
+                        </ul>
+                </p>
+                <p class="lead text-justify">Most brain tumors are diagnosed after symptoms appear. Often a brain tumor is first diagnosed by an internist or a neurologist. An internist is a doctor who specializes in treating adults. A neurologist is a doctor who specializes in problems with the brain and central nervous system.<br><br>
+
+                    In addition to asking the patient for a detailed medical history and doing a physical examination, the doctor may recommend the tests described below. These tests are to help find out the presence, and sometimes the type or grade, of a brain tumor.
+                    
+                    In general, diagnosing a brain tumor usually begins with magnetic resonance imaging (MRI). Once MRI shows that there is a tumor in the brain, the most common way to determine the type of brain tumor is to look at the results from a sample of tissue after a biopsy or surgery. These tests and procedures are described below in more detail.</p>
+            
+        </div>
+
+    </div>
+</section>
+<!--end section2-->
+
+<!--section 3-->
+<div class="container">
+    <div class="row">
+        <div class="col" id="scan1" name="scan1">
+            <!--start modal by image 1-->
+            <img data-toggle="modal" data-target="#image1" style="height: 300px" src="{% static 'image/ct.jpg' %}" class="w-100 shadow-lg p-3 mb-5 bg-dark rounded"
+            class="card-img text-center"
+            alt="brain tumor">
+            <!-- Modal 1 -->
+<div class="modal fade" id="image1" tabindex="-1" role="dialog" aria-labelledby="image1Title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="image1Title" style="color:#63110a;">Computed Tomography (CT)</h4>
+          <button type="button" class="close-lg" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            CT scans are commonly used as screening scans, and are preferred for looking at bones or the presence of blood or abnormal brain tissue  They are safe overall but do expose patients to a small amount of radiation. This scan combines high-speed X-ray technology with a computer. The CT scanner is a large donut-shaped piece of equipment.  The patient lies on a table that slides into an opening in the CT machine. The CT scanner circles the head, taking X-rays from different angles. A computer then combines these X-ray images into a cross-sectional image of the brain (sometimes called a “slice”). A contrast dye may be injected to help the tumor appear more clearly in the CT scan results. These images help the doctor determine the presence and location of a tumor.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+        </div>
+        <div class="col" id="scan2" name="scan2">
+            <!--start modal by image 2-->
+            <img data-toggle="modal" data-target="#image2" style="height: 300px" src="{% static 'image/mri.jpg' %}" class="w-100 shadow-lg p-3 mb-5 bg-dark rounded"
+            class="card-img text-center"
+            alt="brain tumor">
+            <!-- Modal 2 -->
+<div class="modal fade" id="image2" tabindex="-1" role="dialog" aria-labelledby="image2Title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="image2Title" style="color:#63110a;">Magnetic Resonance Imaging (MRI)*</h4>
+          <button type="button" class="close-lg" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            The MRI scanner is a tunnel-shaped piece of equipment that uses magnets and radio waves to generate two-dimensional or three-dimensional pictures of the brain tissue. These images are more detailed than those of a CT for assessing the presence of a brain tumor. The patient lies on a table that slides into the scanner, where a magnetic field surrounds the head. Prior to the scan, a contrast dye (typically gadolinium) is injected into the body. This contrast agent helps some tumors appear more clearly. The final images help the doctor determine the presence, size, and exact location of a tumor.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+        </div>
+        <div class="col" id="scan3" name="scan3">
+            <!--start modal by image 3-->
+            <img data-toggle="modal" data-target="#image3" style="height: 300px" src="{% static 'image/functionalmri.jpg' %}" class="w-100 shadow-lg p-3 mb-5 bg-dark rounded"
+            class="card-img text-center"
+            alt="brain tumor">
+            <!-- Modal 3 -->
+<div class="modal fade" id="image3" tabindex="-1" role="dialog" aria-labelledby="image3Title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="image3Title" style="color:#63110a;">Functional MRI (fMRI)*</h4>
+          <button type="button" class="close-lg" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            fMRIs produce MRI images that help identify parts of the brain responsible for important functions like speech or movement. This information can help a surgeon plan to remove a tumor without harming these functional areas. During this scan, you may be asked to answer questions or move certain parts of your body. These actions help identify the functional areas during the scan.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+        </div>
+
+        <div class="row">
+        <div class="col" id="scan4" name="scan4">
+            <!--start modal by image 4-->
+            <img data-toggle="modal" data-target="#image4" style="height: 300px" src="{% static 'image/flow.jpg' %}" class="w-100 shadow-lg p-3 mb-5 bg-dark rounded"
+            class="card-img text-center"
+            alt="brain tumor">
+            <!-- Modal 4 -->
+<div class="modal fade" id="image4" tabindex="-1" role="dialog" aria-labelledby="image4Title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="image4Title" style="color:#63110a;">low-Sensitive MRI (FS MRI)*</h4>
+          <button type="button" class="close-lg" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            This technique combines functional MRI with images of the flow of cerebrospinal fluid (CSF), a colorless liquid that fills and surrounds the brain and the spinal cord. FS MRIs are particularly useful in planning surgery to remove a skull base tumor, spinal cord tumor, or a tumor causing hydrocephalus (fluid buildup on the brain).
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+        </div>
+        
+        <div class="col" id="scan5" name="scan5">
+            <!--start modal by image 5-->
+            <img data-toggle="modal" data-target="#image5" style="height: 300px" src="{% static 'image/perfusion.png' %}" class="w-100 shadow-lg p-3 mb-5 bg-dark rounded"
+            class="card-img text-center"
+            alt="brain tumor">
+            <!-- Modal 5 -->
+<div class="modal fade" id="image5" tabindex="-1" role="dialog" aria-labelledby="image5Title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="image5Title" style="color:#63110a;">Perfusion MRI *</h4>
+          <button type="button" class="close-lg" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            The type of scan works by seeing how blood moves through the brain. It can help to determine if a brain mass is a tumor or something else (e.g., abscess, stroke, radiation related change from prior radiation, or cells killed by radiation called radiation necrosis). It also helps predict what type of tumor it may be, or whether new growth of a tumor is actually tumor or if it is radiation necrosis or pseudoprogression.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+        </div>
+
+        <div class="col" id="scan6" name="scan6">
+            <!--start modal by image 6-->
+            <img data-toggle="modal" data-target="#image6" style="height: 300px" src="{% static 'image/ctang.png' %}" class="w-100 shadow-lg p-3 mb-5 bg-dark rounded"
+            class="card-img text-center"
+            alt="brain tumor">
+            <!-- Modal 6 -->
+<div class="modal fade" id="image6" tabindex="-1" role="dialog" aria-labelledby="image6Title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="image6Title" style="color:#63110a;">CT Angiography (CTA) and Magnetic Resonance Angiography (MRA)*</h4>
+          <button type="button" class="close-lg" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            These scans are used to locate blood vessels in the brain. This information can help the surgeon plan for tumor removal. This scan may be done with a contrast dye.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="scan7" name="scan7">
+            <!--start modal by image 7-->
+            <img data-toggle="modal" data-target="#image7" style="height: 300px" src="{% static 'image/mrs.jpg' %}" class="w-100 shadow-lg p-3 mb-5 bg-dark rounded"
+            class="card-img text-center"
+            alt="brain tumor">
+            
+            <!-- Modal 7 -->
+<div class="modal fade" id="image7" tabindex="-1" role="dialog" aria-labelledby="image7Title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="image7Title" style="color:#63110a;">Magnetic Resonance Spectroscopy (MRS)*</h4>
+          <button type="button" class="close-lg" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            This type of MRI provides information about the chemical make-up of brain tissue. It helps determine tumor type (which must be confirmed by biopsy), identify dead tissue (also called necrosis), or the difference between old and new tumor cells.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+ </div>
+
+        <div class="col" id="scan8" name="scan8">
+            <!--start modal by image 7-->
+            <img data-toggle="modal" data-target="#image8" style="height: 300px" src="{% static 'image/pet.png' %}" class="w-100 shadow-lg p-3 mb-5 bg-dark rounded"
+            class="card-img text-center"
+            alt="brain tumor">
+            <!-- Modal 8 -->
+<div class="modal fade" id="image8" tabindex="-1" role="dialog" aria-labelledby="image8Title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="image8Title" style="color:#63110a;">Positron Emission Tomography (PET, FDG-PET)</h4>
+          <button type="button" class="close-lg" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            A PET scan shows how your brain is working as opposed to just the structure of the brain. Before the test, a small amount of radioactive material, (called a “tracer”), is injected into the bloodstream. The tracer will then collect into areas with actively dividing cells. Tumor cells are actively dividing so they will show up as bright spots on the scan. It may also help your doctor estimate the tumor’s grade and in some cases, it may help to tell the difference between recurrent tumor cells and necrosis (cells killed by radiation). The tracer leaves the body quickly and does not pose a safety risk to you or your loved one.    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+
+</div>
+
+        <div class="col" id="scan9" name="scan9">
+           
+ <!--start modal by image 9-->
+            <img  data-toggle="modal" data-target="#image9" style="height: 300px" src="{% static 'image/spect.jpg' %}" class="w-100 shadow-lg p-3 mb-5 bg-dark rounded"
+            class="card-img text-center"
+            alt="brain tumor" >
+
+            <!-- Modal 9 -->
+<div class="modal fade" id="image9" tabindex="-1" role="dialog" aria-labelledby="image9Title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="image9Title" style="color:#63110a;">Single Photon Emission Computerized Tomography (SPECT):</h4>
+          <button type="button" class="close-lg" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            SPECT is not usually used to diagnose brain tumors. However, it sometimes provides data that complements information captured in other scans. This data includes how malignant the tumor may be and the difference between tumor tissue and cells killed by radiation (necrosis).<br><br>
+
+            *For these tests, the radiology facility will ask you to complete a form determining if they are safe. For instance, metal objects implanted in your body or certain medical conditions like kidney disease can pose safety risks.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end modal-->
+
+           
+        </div>
+    </div>
+
+      </div>
+    </div>
+<!--end section 3-->
+
+<!--section 4-->
+<!--section2-->
+<section class= "container shadow-lg p-3 mb-5 bg-white rounded">
+    <h2 class="font-weight-bold text-center" style="color:#63110a;">Tumor Biopsy</h2> 
+    <p>
+        A biopsy is a surgical procedure in which the surgeon removes a small amount of tumor tissue. This tissue sample is commonly collected during brain surgery to remove a tumor. A biopsy may be performed on its own when surgery is either not necessary or not possible, but more information about the tumor is needed.<br><br>
+
+The purpose of a biopsy is to establish an exact tumor diagnosis. After it is collected, tumor tissue is sent to a lab for a pathologist (a physician who interprets and diagnoses diseases) to evaluate. The pathologist views the tumor tissue under a microscope to determine the tumor type and grade. Specialized stains and molecular testing provide additional information to help with diagnosis.<br><br>
+
+There are two types of biopsies, open and stereotactic:<br><br>
+<strong style="color:#63110a;">Open Biopsy</strong>
+During a resection (surgical removal of a tumor), the surgeon takes the tumor tissue sample while the tumor is exposed. This generally requires the surgeon to remove a piece of the skull to access the tumor.
+<br><br>
+<strong style="color:#63110a;">Stereotactic Biopsy</strong>
+While under general anesthesia, the surgeon drills a small hole (called a burr hole) into the skull using a computer-assisted guidance system. This system uses 3D images and data from a CT or MRI scan to provide precise information about a tumor’s location and its position relative to the brain’s many structures. A thin, hollow needle is inserted through the hole and collects a sample of tumor tissue, called a “core”, through the needle.
+    </p>
+
+<!--important start eng to bangla convert-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary text-center" style="width: 200px;" data-toggle="modal" data-target="#exampleModalLong">
+  English To Bangla Convert
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        একটি বায়োপসি একটি অস্ত্রোপচার পদ্ধতি যেখানে সার্জন অল্প পরিমাণে টিউমার টিস্যু অপসারণ করে। এই টিস্যুর নমুনা সাধারণত একটি টিউমার অপসারণের জন্য মস্তিষ্কের অস্ত্রোপচারের সময় সংগ্রহ করা হয়। একটি বায়োপসি নিজে থেকেই সঞ্চালিত হতে পারে যখন অস্ত্রোপচারের প্রয়োজন হয় না বা সম্ভব হয় না, তবে টিউমার সম্পর্কে আরও তথ্যের প্রয়োজন হয়।<br><br>
+
+একটি বায়োপসির উদ্দেশ্য হল একটি সঠিক টিউমার নির্ণয় স্থাপন করা। এটি সংগ্রহ করার পরে, টিউমার টিস্যু মূল্যায়নের জন্য প্যাথলজিস্টের (একজন চিকিত্সক যিনি রোগের ব্যাখ্যা এবং নির্ণয় করেন) জন্য একটি ল্যাবে পাঠানো হয়। প্যাথলজিস্ট টিউমারের ধরন এবং গ্রেড নির্ধারণ করতে একটি মাইক্রোস্কোপের নীচে টিউমার টিস্যু দেখেন। বিশেষায়িত দাগ এবং আণবিক পরীক্ষা নির্ণয়ের সাথে সাহায্য করার জন্য অতিরিক্ত তথ্য প্রদান করে।<br><br>
+দুটি ধরণের বায়োপসি রয়েছে, খোলা এবং স্টেরিওট্যাকটিক:<br>
+
+<strong>বায়োপসি খুলুন</strong>
+একটি রিসেকশনের সময় (একটি টিউমার অস্ত্রোপচার অপসারণ), টিউমার উন্মুক্ত হওয়ার সময় সার্জন টিউমার টিস্যুর নমুনা নেন। এটি সাধারণত টিউমার অ্যাক্সেস করার জন্য সার্জনের মাথার খুলির একটি অংশ অপসারণ করতে হয়।<br><br>
+
+<strong>স্টেরিওট্যাকটিক বায়োপসি</strong>
+সাধারণ এনেস্থেশিয়ার অধীনে থাকাকালীন, সার্জন একটি কম্পিউটার-সহায়তা নির্দেশিকা ব্যবস্থা ব্যবহার করে মাথার খুলিতে একটি ছোট গর্ত (যাকে বুর হোল বলা হয়) ড্রিল করেন। এই সিস্টেমটি একটি টিউমারের অবস্থান এবং মস্তিষ্কের অনেক কাঠামোর সাথে সম্পর্কিত এর অবস্থান সম্পর্কে সুনির্দিষ্ট তথ্য প্রদান করতে সিটি বা এমআরআই স্ক্যান থেকে 3D চিত্র এবং ডেটা ব্যবহার করে। একটি পাতলা, ফাঁপা সুই গর্তের মধ্য দিয়ে ঢোকানো হয় এবং সূঁচের মাধ্যমে টিউমার টিস্যুর একটি নমুনা সংগ্রহ করে, যাকে "কোর" বলা হয়।<br>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--eng to bangla convert-->
+
+</section>
+<!--end section 4-->
+
+{% endblock diagnosis%}

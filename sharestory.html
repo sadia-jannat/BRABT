@@ -1,0 +1,99 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block title %}
+Share Your Story
+{% endblock title%}
+
+{% block story %}
+
+<div id="backcolor">
+<div class="container">
+    <div class="row col-lg-6 col-lg-offset-3">
+        <div class="panel " style="background:#9DAAAF;">
+
+        <div class="panel-heading" style="color:#921129;">
+            <h2><i class="fas fa-hospital-user fa-2x" style="color:#921129;"></i>
+                Add Your Fighting Story</h2>
+        </div>
+        <div class="panel-body">
+
+        <form action="" method="POST" enctype="multipart/form-data">
+          {% csrf_token %} 
+
+                <div class="form-group">
+                    <label for="first_name">Enter Your First Name</label>
+                    <input  Required name="firstname" type="text" class="form-control" id="first_name"/>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Enter Your Last Name</label>
+                    <input  Required name="lastname" type="text" class="form-control" id="last_name"/>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="person">You are a *</label>
+                    <div>
+                        <label for="male" class="radio-inline">
+                            <input Required name="type" type="radio" name="gender" id="male">Patient
+                        </label>
+                        <label for="female" class="radio-inline">
+                            <input Required name="type" type="radio" name="gender" id="female">Family Member
+                        </label>
+                        <label for="other" class="radio-inline">
+                            <input Required name="type" type="radio" name="gender" id="other">Caregiver
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter Your Email</label>
+                    <input Required name="email"  type="email" class="form-control" id="email"/>
+                </div>
+                <div class="form-group">
+                    <label for="address">Enter Your Address</label>
+                    <input Required name="address" type="text" class="form-control" id="address"/>
+                </div>
+                <div class="form-group">
+                    <label for="image">Add Your Image</label>
+                    <input Required name="patient_img" type="file" class="form-control" id="image"/>
+                </div>
+                <div class="form-group">
+                    <label for="hospital">Enter Hospital Name</label>
+                    <input Required name="hospital_name" type="text" class="form-control" id="hospital"/>
+                </div>
+                <div class="form-group">
+                    <label for="story_title">Your Story Title</label>
+                    <input Required name="storytitle" type="text" class="form-control" id="story_title"/>
+                </div>
+                <div class="form-group">
+                    <label for="story">Your Story</label>
+                    <input Required name="story" type="text" class="form-control" id="story" style="height:200px;" />
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Save</button>
+
+                <!--messages set -->
+  {% if messages %}
+
+  {% for message in messages %}
+   <h2 {% if message.tags %} class="{{message.tags}}" {% endif %}>
+   {{message}}
+   </h2>
+  {% endfor %}
+
+  {% endif %}
+  
+            </form>
+        </div>
+        <div class="panel-footer text-right">
+            <small>@copy;BRABT</small>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+</div>
+
+{% endblock story %}
